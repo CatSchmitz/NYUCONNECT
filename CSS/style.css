@@ -1,0 +1,132 @@
+
+body{
+	margin:0;
+}
+
+/*  
+HEADER STYLING- includes purple NYU and the Weekly heading 
+*/
+
+header{
+	width:100%;
+	background-color:#FFFFFF;
+	position:fixed;
+	top:-10px;
+}
+
+span.nyu_title_heading{
+	margin:0;
+	width:100%;
+	display:inline-block;
+	vertical-align:bottom;
+	background-color:#572B85;
+	color:#FFFFFF;
+}
+
+/*  
+this is a selector that says apply the following style any H1 tag inside the span with class nyu_title_heading
+it's a great way to be super selective without having a million different classes 
+*/
+
+span.nyu_title_heading > h1{
+	font-size:36px;
+	margin-left:17px;
+}
+
+span.week_heading{
+	float:left;
+	display:inline-block;
+}
+
+span.week_heading > h2{
+	font-size:33px;
+	text-align:left;
+	margin-left:17px;
+	margin-top:19px;
+	margin-bottom:19px;
+	line-height:62px;
+
+}
+span.weekly_topic_heading{
+	float:right;
+	display:inline-block;
+
+}
+
+span.weekly_topic_heading > h2{
+	font-size:23px;
+	text-align:right;
+	margin-left:20px;
+	margin-right:17px;
+	margin-top:19px;
+	margin-bottom:19px;
+	line-height:62px;
+
+}
+
+hr.header_underline{
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+}
+
+/*
+Navigation 
+*/
+
+.nav_links{
+	width:32%;
+}
+
+
+
+div.nav_links{
+	margin-top:5px;
+	margin-bottom:5px;
+	display:inline-block;
+	text-align:center;
+
+}
+
+/* THIS IS HOW TO STYLE LINKS*/
+/* unvisited link */
+div.nav_links > a:link {
+    text-decoration: none;
+    color:black;
+}
+
+/* visited link */
+div.nav_links > a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+/* mouse over link */
+div.nav_links > a:hover {
+    text-decoration: none;
+    color:#572B85;
+}
+
+/* selected link */
+div.nav_links > a:active {
+    text-decoration: none;
+    color:black;
+}
+
+
+/*  
+MEDIA QUERIES ARE GREAT FOR HELPING CREATE RESPONSIVE WEBSITES
+Basically, this code snippet detects screen size and changes the styling based on how big the screen is.
+For phone users, the header changes slightly so all the text will fit onto the screen
+*/
+
+@media screen and (max-width: 700px) {
+    /* make the line height smaller so that the font stacks easily */
+    span.weekly_topic_heading > h2{ 
+    	margin-top:0px;
+		line-height:normal;
+		    }
+	
+}
+
+
