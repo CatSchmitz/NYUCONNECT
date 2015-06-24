@@ -1,7 +1,13 @@
+html{
+
+
+
+}
 
 body{
 	margin:0;
 	font-family:gotham;
+	min-width:400px;
 }
 
 /*  
@@ -13,6 +19,8 @@ header{
 	background-color:#FFFFFF;
 	position:fixed;
 	top:-10px;
+	z-index:10000;
+	min-width:400px;
 }
 
 span.nyu_title_heading{
@@ -22,6 +30,12 @@ span.nyu_title_heading{
 	vertical-align:bottom;
 	background-color:#572B85;
 	color:#FFFFFF;
+}
+
+.nyu_title_heading > img{
+	height:80px;
+	display:inline-block;
+	vertical-align:middle;
 }
 
 /*  
@@ -221,12 +235,15 @@ div.individual_example{
 div.daily_example_code{
 	margin-left:10%;
 	margin-right:10%;
-	color:#FFFFFF;
-	background-color:black;
+	margin-bottom: 10px;
 }
 
 div.daily_example_code > p{
 	padding:10px;
+}
+
+div.daily_example_code > img{
+	width:100%
 }
 
 .button_holder{
@@ -257,8 +274,34 @@ div.daily_example_code > p{
   text-decoration: none;
 }
 
+/* unvisited link */
+.btn > a:link {
+    text-decoration: none;
+    color:white;
+    
+}
+
+/* visited link */
+.btn  > a:visited {
+	text-decoration: none;
+    color:white;
+}
+
+/* mouse over link */
+.btn > a:hover {
+    text-decoration: none;
+    color:black;
+}
+
+/* selected link */
+.btn > a:active {
+    text-decoration: none;
+    color:black;
+}
+
+
 div.bottom_nyu_line{
-	height:84px;
+	height:98px;
 	background-color:#572B85;
 
 	
@@ -303,6 +346,9 @@ li.footer_nav > a:active {
     color:black;
 }
 
+
+
+
 /*  
 MEDIA QUERIES ARE GREAT FOR HELPING CREATE RESPONSIVE WEBSITES
 Basically, this code snippet detects screen size and changes the styling based on how big the screen is.
@@ -311,11 +357,11 @@ For phone users, the header changes slightly so all the text will fit onto the s
 
 @media screen and (max-width: 723px) {
     /* make the line height smaller so that the font stacks easily */
-    span.weekly_topic_heading > h2{ 
+    span.weekly_topic_heading_week_1 > h2{ 
     	margin-top:0px;
 		line-height:normal;
 		    }
-	div.weekly_heading_holder{
+	div.weekly_heading_holder_week_1{
 		height:130px;
 	}
 	
@@ -323,7 +369,7 @@ For phone users, the header changes slightly so all the text will fit onto the s
 
 @media screen and (max-width: 560px) {
     
-	div.weekly_heading_holder{
+	div.weekly_heading_holder_week_1{
 		height:150px;
 	}
 	
@@ -331,8 +377,25 @@ For phone users, the header changes slightly so all the text will fit onto the s
 
 @media screen and (max-width: 350px) {
     
-	div.weekly_heading_holder{
+	div.weekly_heading_holder_week_1{
 		height:200px;
 	}
 	
 }
+
+/*WEEK TWO MEDIA QUERIES FOR NAV*/
+
+@media screen and (max-width: 523px) {
+    /* make the line height smaller so that the font stacks easily */
+    span.weekly_topic_heading_week_2 > h2{ 
+    	margin-top:0px;
+		line-height:normal;
+		    }
+	div.weekly_heading_holder_week_2{
+		height:180px;
+	}
+	
+}
+
+
+
