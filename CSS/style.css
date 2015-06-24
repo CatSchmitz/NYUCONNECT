@@ -1,6 +1,7 @@
 
 body{
 	margin:0;
+	font-family:gotham;
 }
 
 /*  
@@ -70,12 +71,17 @@ hr.header_underline{
 	border-style: solid;
 }
 
+div.weekly_heading_holder{
+	height:100px;
+}
+
 /*
 Navigation 
 */
 
 .nav_links{
 	width:32%;
+	font-size:12px;
 }
 
 
@@ -113,6 +119,189 @@ div.nav_links > a:active {
     color:black;
 }
 
+/* This holds the link bank and the weekly headings*/ 
+div.week_nav_title_holder{
+	margin-top:80px;
+}
+
+p.daily_heading{
+	margin-left:17px;
+	margin-top:30px;
+	margin-bottom:30px;
+	font-size:20px;
+
+
+}
+
+div.daily_activity_prompt{
+	margin-left:10%;
+	margin-right:10%;
+	background-color:black;
+	height:350px;
+}
+
+div.daily_activity_prompt_text{
+	vertical-align:middle;
+	color:#FFFFFF;
+	font-size:30px;
+	text-align:center;
+	display:table;
+
+}
+
+h3.call_to_action_headings{
+	margin-left:17px;
+	margin-top:30px;
+	margin-bottom:30px;
+	font-size:35px;
+}
+
+.example_holder{
+	margin-left:10%;
+	margin-right:10%;
+	display: -webkit-box;
+ 	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+	display:flex;
+	/*align-content:space-between;
+	-webkit-align-content:space-between;
+	flex-wrap:wrap;*/
+	-webkit-flex-flow:row wrap;
+	flex-flow:row wrap;
+	justify-content:space-between;
+	-webkit-justify-content:space-between;
+	 
+ 
+}
+
+li{
+	margin:auto;
+}
+
+li > a:link {
+    text-decoration: none;
+    color:black;
+    
+}
+
+/* visited link */
+li  > a:visited {
+	text-decoration: none;
+    color:black;
+}
+
+/* mouse over link */
+li > a:hover {
+    text-decoration: none;
+    color:#572B85;
+}
+
+/* selected link */
+li> a:active {
+    text-decoration: none;
+    color:black;
+}
+
+
+div.individual_example{
+	height:240px;
+	width:195px;
+	text-align:center;
+	margin:auto;
+	padding:5px;
+
+}
+
+
+.individual_example < p{
+	margin-bottom:30px;
+}
+
+div.daily_example_code{
+	margin-left:10%;
+	margin-right:10%;
+	color:#FFFFFF;
+	background-color:black;
+}
+
+div.daily_example_code > p{
+	padding:10px;
+}
+
+.button_holder{
+	display: -webkit-box;
+ 	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+	display:flex;
+	align-content:space-between;
+}
+
+.btn {
+	margin:auto;
+  -webkit-border-radius: 22;
+  -moz-border-radius: 22;
+  border-radius: 22px;
+  color: #ffffff;
+  font-size: 20px;
+  background: #572B85;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  font-family:gotham;
+  margin-bottom:80px;
+}
+
+.btn:hover {
+  background: #8445c7;
+  text-decoration: none;
+}
+
+div.bottom_nyu_line{
+	height:84px;
+	background-color:#572B85;
+
+	
+	
+}
+
+div.bottom_nav_holder{
+	margin-right:17px;
+	margin-top:12px;
+	text-align:right;
+	font-size:12px;
+	display:inline-block;
+	float:right;
+}
+
+li {
+	list-style: none;
+}
+/* THIS IS HOW TO STYLE LINKS*/
+/* unvisited link */
+li.footer_nav > a:link {
+    text-decoration: none;
+    color:white;
+    
+}
+
+/* visited link */
+li.footer_nav  > a:visited {
+	text-decoration: none;
+    color:white;
+}
+
+/* mouse over link */
+li.footer_nav > a:hover {
+    text-decoration: none;
+    color:black;
+}
+
+/* selected link */
+li.footer_nav > a:active {
+    text-decoration: none;
+    color:black;
+}
 
 /*  
 MEDIA QUERIES ARE GREAT FOR HELPING CREATE RESPONSIVE WEBSITES
@@ -120,13 +309,30 @@ Basically, this code snippet detects screen size and changes the styling based o
 For phone users, the header changes slightly so all the text will fit onto the screen
 */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 723px) {
     /* make the line height smaller so that the font stacks easily */
     span.weekly_topic_heading > h2{ 
     	margin-top:0px;
 		line-height:normal;
 		    }
+	div.weekly_heading_holder{
+		height:130px;
+	}
 	
 }
 
+@media screen and (max-width: 560px) {
+    
+	div.weekly_heading_holder{
+		height:150px;
+	}
+	
+}
 
+@media screen and (max-width: 350px) {
+    
+	div.weekly_heading_holder{
+		height:200px;
+	}
+	
+}

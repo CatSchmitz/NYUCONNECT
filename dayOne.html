@@ -3,6 +3,18 @@
 		<head>
 			<title> NYU Connect | Day One </title>
 			<link rel="stylesheet" type="text/css" href="CSS/style.css">
+			<link type="text/css" rel="stylesheet" href="light-gallery/css/lightGallery.css" />                    
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="light-gallery/js/lightGallery.js"></script>
+			 <script type="text/javascript">
+     			 $(document).ready(function() {
+        			$('#localVideo').lightGallery({
+         		  thumbnail:false,
+           		 addClass:'localVideo'
+    		    });
+    			  });
+   			 </script>
+   			
 		</head> 
 		
 
@@ -11,27 +23,135 @@
 			 <span  class="nyu_title_heading"><h1>NYU-CONNECT</h1> </span>
 
 			
-			 	<span class="week_heading">
-			 		<h2>WEEK 1</h2>
-			 	</span>
-			 	<span class="weekly_topic_heading">
-			 		<h2>PHOTOGRAPHY & PHOTOSHOP / HTML & CSS </h2>
-			 	</span>
-			 	<hr class="header_underline">
-
-			 	<div class="navigation">
-
-				<div class="nav_links"><a href="#" >DAY 1</a></div> 
-				<div class="nav_links"><a href="#" >DAY 2</a></div> 
-				<div class="nav_links"><a href="#" >DAY 3</a></div> 
-				
-				<hr class="header_underline">
-
-			</div>
-			
 			</header> 
 			
+				<div class="week_nav_title_holder">
+					<div class="weekly_heading_holder">
+					 	<span class="week_heading">
+					 		<h2>WEEK 1</h2>
+					 	</span>
+
+					 	<span class="weekly_topic_heading">
+					 		<h2>PHOTOGRAPHY & PHOTOSHOP / HTML & CSS </h2>
+					 	</span>
+				 	</div>
+				
+
+				 	<hr class="header_underline">
+
+				 	<div class="navigation">
+
+						<div class="nav_links"><a href="#" >DAY 1</a></div> 
+						<div class="nav_links"><a href="#" >DAY 2</a></div> 
+						<div class="nav_links"><a href="#" >DAY 3</a></div> 
+						
+						<hr class="header_underline">
+					</div>
+				</div>
+
+				<p class="daily_heading">DAY 1: Photography and Photoshop</p> 
+
+				<div class="daily_activity_prompt">
+					<div class="daily_activity_prompt_text"><h1>Take great photos. We'll put them here.</h1> <h6>Log into NYU Classes to submit photos.</h6></div>
+				</div> 
+
+				<h3 class="call_to_action_headings">Check it out.</h3>
+
 			
+
+
+				<ul id="localVideo" class="gallery list-unstyled example_holder">
+
+				
+						 <li data-html="#video1" data-sub-html="<div class='custom-html'><h4>Big Buck Bunny</h4><p>Big Buck Bunny is a short computer-animated comedy film by the Blender Institute, part of the Blender Foundation.</p></div>"> 
+					        <a href="#">
+					        	<div class="individual_example">
+					        	<img src="http://placekitten.com/g/195/195" />
+								<p>Learn about exposure!</p>
+								</div>
+					            
+					        </a> 
+		    			</li>
+
+					    <li data-html="#video2" data-sub-html=".subhtml"> 
+					        <a href="#">
+					        	<div class="individual_example">
+					        		<img src="http://placekitten.com/g/195/195" />
+									<p>Learn about exposure!</p>
+								</div>
+					        </a> 
+					    </li>
+					    
+
+					 	</ul>
+					
+
+
+
+					    <div style="display:none;" id="video1">
+					        <video width="75%" controls>
+					        	<source src="test.mp4" type="video/mp4">
+					            <source src="test.webm" type="video/webm">
+					             Your browser does not support HTML5 video.
+					        </video>
+					    </div>
+					    <div style="display:none;" id="video2">
+					        <video width="75%" controls>
+					        	<source src="test.mp4" type="video/mp4">
+					            <source src="test.webm" type="video/webm">
+					            
+					            Your browser does not support HTML5 video.
+					        </video>
+					    </div>
+					    <div style="display:none;" class="subhtml">
+					        <div class='custom-html'><h4>Pigloo - Papa Pinguin</h4></div>
+					    </div>
+
+
+				<h3 class="call_to_action_headings">Make it happen.</h3>
+				<div class="daily_example_code">
+					<p>
+					&lt;!DOCTYPE html&gt;
+					<br>
+							&lt;html&gt;
+							<br>
+								&lt;head&gt;
+								<br>
+									&lt;title&gt; Title of the document &lt;/title&gt;
+									<br>
+								&lt;/head&gt;
+								<br>	
+								&lt;body&gt;
+								<br>
+									The content of the document......
+									<br>
+								&lt;/body&gt;
+								<br>
+
+								&lt;/html&gt;
+								<br>
+					</p>
+				</div>
+
+				<div class="button_holder">
+					<button class="btn">Make it happen.</button>
+				</div>
+
+
+				<div class="bottom_nyu_line">
+					<div class="bottom_nav_holder">
+						<ul>
+						<li class="footer_nav"><a href="index.html">HOME</a></li>
+						<li class="footer_nav"><a href="#">ABOUT THIS COURSE</a></li>
+						<li class="footer_nav"><a href="#">CLASSES</a></li>
+						</ul>
+					</div>
+
+				</div>
+				
+				
+					
+				
 		</body>
 
 
