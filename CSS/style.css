@@ -7,7 +7,7 @@ html{
 body{
 	margin:0;
 	font-family:gotham;
-	min-width:400px;
+	min-width:413px;
 }
 
 /*  
@@ -385,17 +385,23 @@ For phone users, the header changes slightly so all the text will fit onto the s
 
 /*WEEK TWO MEDIA QUERIES FOR NAV*/
 
-@media screen and (max-width: 523px) {
+@media screen and (max-width: 527px) {
     /* make the line height smaller so that the font stacks easily */
-    span.weekly_topic_heading_week_2 > h2{ 
-    	margin-top:0px;
+    span.weekly_topic_heading_week_2{ 
+    	margin-top:-40px;
+    	margin-bottom:-20px;
 		line-height:normal;
 		    }
 	div.weekly_heading_holder_week_2{
-		height:180px;
+		height:150px;
+
 	}
 	
 }
+
+/* WEEK 3 Nav */
+
+
 
 
 
