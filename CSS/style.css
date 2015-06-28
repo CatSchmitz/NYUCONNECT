@@ -1,13 +1,12 @@
 html{
 
-
-
 }
 
 body{
 	margin:0;
 	font-family:gotham;
 	min-width:413px;
+	height:100%;
 }
 
 /*  
@@ -315,6 +314,7 @@ div.bottom_nav_holder{
 	font-size:12px;
 	display:inline-block;
 	float:right;
+	
 }
 
 li {
