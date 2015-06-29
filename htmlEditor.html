@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>htmlEditor</title>
+	<meta name="viewport" content="width=device-width">
+	<link type="text/css" rel="stylesheet" href="CSS/style.css">
+	<link type="text/css" rel="stylesheet" href="CSS/sliderStyling.css">
+	<link type="text/css" rel="stylesheet" href="light-gallery/css/lightGallery.css"> 
+	<link type="text/css" rel="stylesheet" href="CSS/editorStyling.css">
+    <script type="text/javascript" src="js/htmlEditor.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="light-gallery/js/lightGallery.js"></script>
+	<script type="text/javascript">
+     	$(document).ready(function() {
+        	$('#localVideo').lightGallery({
+         	thumbnail:false,
+           	addClass:'localVideo'
+    		});
+    	});
+   	</script>
+	<script src="js/jquery.slides.min.js"></script>
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+	<script>
+		$(function() {
+			$('#slides').slidesjs({
+				width: 940,
+			    height: 528,
+			    navigation: false
+			 });
+		});
+	</script>
+
+</head>
+
+<body onload="resetCode()" onresize="testScreenSize()">
+	<span  class="nyu_title_heading"> <img src="img/NYU_torch.jpg"> <h1 style= "display:inline-block;">NYU-CONNECT</h1> </span>
+	<div id="main">
+		<br>
+		<div id="testButton" align="center">
+			<button id="test" class ="btn" onclick="testCode()" disabled="disabled">Code Changed - Click Here to See Result!</button>
+			<button id="reset" class ="btn" onclick="resetCode()" disabled="disabled">Reset</button>
+		</div>
+		<br>
+		<div id="editor">
+   			<textarea id="input" spellcheck="false" oninput="enableButton()"></textarea>
+    		<div id="output"></div>
+    	</div>
+    	<div id="backButton" align="center">
+    	<br>
+	    	<button id="back" class ="btn" onclick="goBack()">Go Back</button>
+	    </div>
+    </div>
+    <br>
+    <div class="bottom_nyu_line">
+					<div class="bottom_nav_holder">
+						<ul>
+						<li class="footer_nav"><a href="index.html">HOME</a></li>
+						<li class="footer_nav"><a href="about.html">ABOUT THIS COURSE</a></li>
+						<li class="footer_nav"><a href="https://newclasses.nyu.edu/">CLASSES</a></li>
+						<li class="footer_nav"><a href="courseOverview.html">SITE OVERVIEW</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+</body>
+
+</html>
