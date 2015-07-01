@@ -41,17 +41,13 @@
 		<br>
 		<div id="testButton" align="center">
 			<button id="test" class ="btn" onclick="testCode()" disabled="disabled">Code Changed - Click Here to See Result!</button>
-			<button id="reset" class ="btn" onclick="resetCode()" disabled="disabled">Reset</button>
+			<button id="reset" class ="btn" onclick="resetCode()">Reset</button>
 		</div>
 		<br>
 		<div id="editor">
    			<textarea id="input" spellcheck="false" oninput="enableButton()"></textarea>
-    		<div id="output"></div>
+    		<iframe id="output" src="htmlOutput.html"></iframe>
     	</div>
-    	<div id="backButton" align="center">
-    	<br>
-	    	<button id="back" class ="btn" onclick="goBack()">Go Back</button>
-	    </div>
     </div>
     <br>
     <div class="bottom_nyu_line">

@@ -8,7 +8,10 @@
 	height: 650px;
 	background-color: black;
 	color: white;
+	font-size:14px;
+	line-height: 115%;
 	resize: none;
+	margin-left: 17px;
 }
 
 #output {
@@ -19,6 +22,7 @@
 	height: 650px;
 	border: 1px solid black;
 	overflow:auto;
+	margin-right: 17px;
 }
 
 #test {
@@ -31,7 +35,7 @@
 	height: 650px;
 }
 
-#back {
+#close {
 	margin-bottom: 0px;
 	font-size: 15px;
 }

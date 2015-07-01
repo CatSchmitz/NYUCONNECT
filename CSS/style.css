@@ -1,10 +1,23 @@
 html{
 
 }
+@font-face {
+   font-family:GothamBold;
+   src: url(../Gotham-Bold.otf) format(opentype);
+}
+
+
+@font-face {
+   font-family:GothamLight;
+   src: url(../Gotham-Light.otf) format(opentype);
+}
+
+
+
 
 body{
 	margin:0;
-	font-family:gotham;
+	font-family:GothamLight;
 	min-width:413px;
 	height:100%;
 }
@@ -32,7 +45,7 @@ span.nyu_title_heading{
 }
 
 .nyu_title_heading > img{
-	height:80px;
+	height:90px;
 	display:inline-block;
 	vertical-align:middle;
 }
@@ -45,6 +58,8 @@ it's a great way to be super selective without having a million different classe
 span.nyu_title_heading > h1{
 	font-size:36px;
 	margin-left:17px;
+	font-family:GothamBold;
+	font-weight:normal;
 }
 
 span.week_heading{
@@ -59,6 +74,8 @@ span.week_heading > h2{
 	margin-top:19px;
 	margin-bottom:19px;
 	line-height:62px;
+	font-family:GothamBold;
+	font-weight:normal;
 
 }
 span.weekly_topic_heading{
@@ -75,6 +92,8 @@ span.weekly_topic_heading > h2{
 	margin-top:19px;
 	margin-bottom:19px;
 	line-height:62px;
+	font-family:GothamBold;
+	font-weight:normal;
 
 }
 
@@ -134,7 +153,7 @@ div.nav_links > a:active {
 
 /* This holds the link bank and the weekly headings*/ 
 div.week_nav_title_holder{
-	margin-top:80px;
+	margin-top:90px;
 }
 
 p.daily_heading{
@@ -167,6 +186,8 @@ h3.call_to_action_headings{
 	margin-top:30px;
 	margin-bottom:30px;
 	font-size:35px;
+	font-family:GothamBold;
+	font-weight:normal;
 }
 
 .example_holder{
@@ -309,7 +330,7 @@ div.bottom_nyu_line{
 
 div.bottom_nav_holder{
 	margin-right:17px;
-	margin-top:12px;
+	margin-top:9px;
 	text-align:right;
 	font-size:12px;
 	display:inline-block;
@@ -399,8 +420,21 @@ For phone users, the header changes slightly so all the text will fit onto the s
 	
 }
 
-/* WEEK 3 Nav */
+/* about page */
 
+.course_description{
+	width:80%;
+	margin-left:10%;
+	
+	height:40%;
+	margin-bottom:23%;
+}
+
+h2.daily_heading{
+	margin-top:23%;
+	margin-left:10%;
+
+}
 
 
 
