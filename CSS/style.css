@@ -249,13 +249,15 @@ div.individual_example{
 
 
 .individual_example < p{
-	margin-bottom:30px;
+	margin-bottom:50px;
 }
 
 div.daily_example_code{
 	margin-left:10%;
 	margin-right:10%;
 	margin-bottom: 10px;
+	background-color:black;
+	color:white;
 }
 
 div.daily_example_code > p{
@@ -367,8 +369,16 @@ li.footer_nav > a:active {
     color:black;
 }
 
+.workshop_days{
+	margin-bottom:30px;
+}
 
+/*homepage */
 
+.week_one_homepage_container{
+	width:75%; 
+	margin-top:10%;
+}
 
 /*  
 MEDIA QUERIES ARE GREAT FOR HELPING CREATE RESPONSIVE WEBSITES
@@ -385,6 +395,7 @@ For phone users, the header changes slightly so all the text will fit onto the s
 	div.weekly_heading_holder_week_1{
 		height:130px;
 	}
+
 	
 }
 
@@ -393,6 +404,10 @@ For phone users, the header changes slightly so all the text will fit onto the s
 	div.weekly_heading_holder_week_1{
 		height:150px;
 	}
+	.week_one_homepage_container{
+	width:75%; 
+	margin-top:25%;
+}
 	
 }
 
@@ -419,6 +434,45 @@ For phone users, the header changes slightly so all the text will fit onto the s
 	}
 	
 }
+@media screen and (min-height:500px) and (max-width:1000px){
+	.week_one_homepage_container{
+	width:75%; 
+	margin-top:30%;
+	margin-bottom:20%;
+	}
+
+}
+
+@media screen and (min-height:500px) and (max-width:650px){
+	.week_one_homepage_container{
+	width:75%; 
+	margin-top:50%;
+	margin-bottom:35%;
+	}
+
+}
+@media screen and (min-height:500px) and (max-width:500px){
+	.week_one_homepage_container{
+	width:75%; 
+	margin-top:60%;
+	margin-bottom:55%;
+	}
+
+}
+/*this is for the last pages that don't have much content- preventing bottom footer from rising up. */ 
+@media screen and (min-height:500px) and (max-width:650px){
+	.workshop_days{
+	margin-bottom:25%;
+	margin-top:10%;
+	}
+	.about_heading {
+		padding:5%;
+	}
+	.course_description{
+		padding:5%;
+	}
+
+}
 
 /* about page */
 
@@ -438,4 +492,59 @@ h2.daily_heading{
 
 
 
+/*Advanced easter eggs*/ 
+
+/* CSS examples */ 
+
+/* by using :hover you can select elements to style only when the mouse is hovering over that element. 
+you can change anything you want, but to see quick results, try using color first. */
+
+/*DAY ONE*/
+.color_on_hover_example:hover{
+	color:#572B85;
+}
+
+
+/*you can also change things like transparency, which is referred to as opacity. Here's how it looks with hover*/
+/*DAY TWO*/
+.opacity_on_hover_example:hover{
+	opacity:.2;
+}
+
+/*you can also change a combination of things like background color and text color*/
+/*DAY THREE*/
+.background_color_on_hover_example:hover{
+	background-color:black;
+	color:white;
+}
+/*DAY FOUR*/
+/*you can also change bigger properties like size so that the elements grow and shrink when hovered on
+	this example shows growing and shrinking using font-size, but you can also grow and shrink elements using height and width properties as well. 
+ */
+
+.grow_on_hover_example:hover{
+	font-size:200px;
+
+}
+/*DAY FIVE*/
+.shrink_on_hover_example:hover{
+	font-size:20px;
+
+}
+
+/* DAY SIX */
+/*Note, you can also use transform to change things like scale and position 
+Sometimes we need to use vendor prefixes like -moz and -webkit so that multiple browsers can use the same transform property 
+Not all browsers interpret code in the same way*/
+.rotate_on_hover_example:hover{
+	-moz-webkit-transform:rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	transform:rotate(7deg);
+}
+
+/* DAY SEVEN */ 
+/*This is how to make a square turn into a circle*/ 
+.circle:hover{
+	border-radius:50%;
+}
 
