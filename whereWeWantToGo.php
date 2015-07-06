@@ -1,13 +1,46 @@
 <!doctype html>
 <html>
 <head>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64837526-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 <meta charset="utf-8">
 
+<title> NYU Connect | Where We Want To Go </title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 </head>
 
 <body>
+		<header> 
 
+			 <span  class="nyu_title_heading"> <img src="img/NYU_torch.jpg"> <h1 style= "display:inline-block;">NYU-CONNECT</h1> </span>
+
+			
+			</header> 
+			
+				<div class="week_nav_title_holder">
+					<div class="weekly_heading_holder weekly_heading_holder_week_1">
+					 	<span class="week_heading">
+					 		<h2>REFLECT</h2>
+					 	</span>
+
+					 	<span class="weekly_topic_heading weekly_topic_heading_week_1">
+					 		<h2>WHERE WE WANT TO GO </h2>
+					 	</span>
+				 	</div>
+				
+
+				 	<hr class="header_underline">
 	<?php
 	include('config.php');
 
@@ -40,54 +73,67 @@
 			$post = mysqli_real_escape_string($db, $_POST['text_added']);
 			
 			//insert post
-			$sql = "INSERT INTO mood_post (text_added, date_added) VALUES (null, '$post', NOW())";
+			$sql = "INSERT INTO whereToGo (text_added, date_added) VALUES ('$post', NOW())";
 			$result = @mysqli_query($db, $sql) or die('Query failed: ' . mysqli_error($db));
 			
 			//display confirmation 
-			echo "<p class=\"text-success\">Your post has been added</p>";
+			echo "<p class=\"alert_message\">Your post has been added! Thanks for contributing!</p>";
 			
 		}else{
 			foreach($error as $value){
-			echo "<div class=\"alert alert-danger\">{$value}</div>";	
+			echo "<div class=\"alert_message\">{$value}</div>";	
 				
 			}
 			
 		}
-	
 		
 	
 	}
 	
 	?>
-    
-    <form method="post" action="index.php" style="margin-bottom: 25px"> 
-    	<div class="form-group"> 
-        	<textarea name="text_added" placeholder="What do you want to say?" class="form-control"></textarea>
-        </div> 
-		<input name="submit" type="submit" value="Post" class="btn btn-primary" /> 
+    <p class="daily_heading"> Where We Want To Go</p> 
+    <form method="post" action="whereWeWantToGo.php"> 
+    	
+        	<textarea name="text_added" class="user_input_forms" placeholder="Where do you want to go from here? Did you find you have a knack for video? HTML5 and CSS? Let us know so we can help you get there!"></textarea>
+        <div class="button_holder"> 
+		<input name="submit" type="submit" value="Post" class="btn" /> 
+		</div> 
     </form>
     
     <?php
-		$sql = "SELECT text_added, DATE_FORMAT(date_added,'%M %d, %Y') AS formatted_date FROM mood_post ORDER BY post_date DESC";
+		$sql = "SELECT text_added, DATE_FORMAT(date_added,'%M %d, %Y') AS formatted_date FROM whereToGo ORDER BY date_added DESC";
 		$result = mysqli_query($db, $sql) or die('Query failed: ' . mysqli_error($db));
 		while ($row = mysqli_fetch_assoc($result)) 
 		{
 			// Display shout
-			echo "<div class=\"panel panel-default\">";
-			echo "<div class=\"panel-body\">";
+			echo "<div>";
+			echo "<div>";
 			
-			echo "<p>{$row['text_added']}</p>";
-			echo "<span class=\"text-muted\">{$row['formatted_date']}<span>";
-			echo "</div>";
+			echo "<p class=\"user_post\">{$row['text_added']}";
+			echo "<span><br>{$row['formatted_date']}<span>";
+			echo " </p></div>";
 			echo "</div>";
 		}
-	
 	
 	?>
     
     
 </div>
+			<div class="bottom_nyu_line">
+					<div class="bottom_nav_holder">
+						<ul>
+						<li class="footer_nav"><a href="about.html">WHO WE ARE</a></li>
+						<li class="footer_nav"><a href="index.html">COURSE HOME</a> | <a href="https://newclasses.nyu.edu/">CLASSES</a></li>
+					
+						
+						<li class="footer_nav"><a href="dayOne.html">WEEK 1</a> | <a href="dayFour.html">WEEK 2</a> | <a href="daySeven.html">WEEK 3</a> | <a href="siteOverview.html">COURSE MAP</a></li>
+						<li class="footer_nav"><a href="whatWeWantToLearn.php">WHAT WE WANT TO LEARN</a> | <a href="whereWeWantToGo.php">WHERE WE WANT TO GO</a> |  <a href="resources.php">RESOURCES TO GET US THERE</a></li>
+						</ul>
+					</div>
 
+				</div>
+				
+				
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 	//database credentials 
-	$db_user = 'catschmi_cat';
-	$db_password = 'C0l0rad0gurl1';
-	$db_host = 'http://www.catschmitz.com';
-	$db_name = 'catschmi_nyuConnect';
+	$db_user = 'composk3_cat';
+	$db_password = '15SuperSquad~';
+	$db_host = 'localhost';
+	$db_name = 'composk3_nyu-connect';
 ?>
