@@ -402,6 +402,8 @@ div.bottom_nav_holder{
 	font-size:12px;
 	display:inline-block;
 	float:right;
+	color:white;
+
 	
 }
 
@@ -855,3 +857,5 @@ Here's another animation example. This is using keyframe animation, which can be
  	-o-animation:      success_animation 2s; /* Opera 12+ */
   	animation:         success_animation 2s; /* IE 10+, Fx 29+ */
 }
+
+a.anchor { display: block; position: relative; top: -90px; visibility: hidden; }

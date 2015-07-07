@@ -86,10 +86,7 @@
 			}
 			
 		}
-		
-	
 	}
-	
 	?>
     <p class="daily_heading"> Where We Want To Go</p> 
     <form method="post" action="whereWeWantToGo.php"> 
@@ -110,7 +107,7 @@
 			echo "<div>";
 			
 			echo "<p class=\"user_post\">{$row['text_added']}";
-			echo "<span><br>{$row['formatted_date']}<span>";
+			echo "<span style=\"font-size:8px;\"><br>{$row['formatted_date']}<span>";
 			echo " </p></div>";
 			echo "</div>";
 		}
