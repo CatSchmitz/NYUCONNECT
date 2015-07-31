@@ -48,6 +48,7 @@ HEADER STYLING- includes purple NYU and the Weekly heading
 
 .homepage_title{
 	margin-top:300px;
+	margin-bottom:150px;
 	width:80%;
 	margin-left:10%;
 }
@@ -304,10 +305,10 @@ li> a:active {
 
 div.individual_example{
 	height:240px;
-	width:195px;
 	text-align:center;
 	margin:auto;
 	padding:5px;
+	margin-top:100px;
 
 }
 
@@ -351,7 +352,7 @@ div.daily_example_code > img{
   background: #572B85;
   padding: 10px 15px 10px 15px;
   text-decoration: none;
-  font-family:gotham;
+  font-family:gothamLight;
   margin-bottom:80px;
 }
 
@@ -444,7 +445,7 @@ li.footer_nav > a:active {
 
 .week_one_homepage_container{
 	width:75%; 
-	margin-top:10%;
+	margin-top:20%;
 }
 
 /*  
@@ -565,15 +566,22 @@ h2.about_heading{
 	font-family:GothamBold;
 }
 
-.student_photo{
-	height:150px;
-	width:150px;
+.member_photo{
+	width:auto;
 }
 
 .member_photo > img{
 
-	width:100%;
+	height:100%;
 }
+.silly_member_photo > img{
+-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+  
 
 /*Advanced easter eggs*/ 
 
@@ -859,3 +867,673 @@ Here's another animation example. This is using keyframe animation, which can be
 }
 
 a.anchor { display: block; position: relative; top: -90px; visibility: hidden; }
+
+div.student_webs{
+	width:90%;
+	margin-left:5%;
+	display: -webkit-box;
+ 	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+	display:flex;
+	align-content:center;
+	-webkit-align-content:center;
+	flex-wrap:wrap;
+	-webkit-flex-flow:row wrap;
+	flex-flow:row wrap;
+	justify-content:center;
+	-webkit-justify-content:center;
+
+}
+
+div.individual_photo{
+	display:inline-block;
+	width:300px;
+	height:300px;
+	text-align:center;
+	font-family:GothamBold;
+	font-size:25px;
+	
+	opacity:.5;
+
+}
+
+#madison{
+	background-image:url(../img/index_photos/madison.png);
+	font-size:30px;
+	}
+#madison > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#madison > a:visited{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#madison > a:hover{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#madison > a:active{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+	
+#chelsea{
+	background-image:url(../img/index_photos/chelsea.png);
+	font-size:35px;
+}
+#chelsea > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#chelsea > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#chelsea > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#chelsea > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#francisco{
+	background-image:url(../img/index_photos/francisco.png);
+	font-size:35px;
+}
+#francisco > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#francisco > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#francisco > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#francisco > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}
+
+#tristan{
+	background-image:url(../img/index_photos/tristan.png);
+	font-size:35px;
+}
+#tristan > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#tristan > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#tristan > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#tristan > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}
+	
+#crystalm{
+	background-image:url(../img/index_photos/crystalm.png);
+	font-size:35px;
+}
+#crystalm > a:link{
+	color:red;
+	text-shadow: 2px 2px black;
+	}
+#crystalm > a:visited{
+color:red;
+text-shadow: 2px 2px black;
+	}
+#crystalm > a:hover{
+color:red;
+text-shadow: 2px 2px black;
+	}
+#crystalm > a:active{
+color:red;
+text-shadow: 2px 2px black;
+	}
+	
+	
+#jorge{
+	background-image:url(../img/index_photos/jorge.png);
+	font-size:35px;
+}
+#jorge > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#jorge > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#jorge > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#jorge > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}	
+	#megan{
+	background-image:url(../img/index_photos/megan.png);
+	font-size:35px;
+}
+#megan > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#megan > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#megan > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#megan > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}	
+#shawntiara{
+	background-image:url(../img/index_photos/shawntiara.png);
+	font-size:35px;
+}
+#shawntiara > a:link{
+	color:black;
+	text-shadow: 2px 2px white;
+	}
+#shawntiara > a:visited{
+color:black;
+text-shadow: 2px 2px white;
+	}
+#shawntiara > a:hover{
+color:black;
+text-shadow: 2px 2px white;
+	}
+#shawntiara > a:active{
+color:black;
+text-shadow: 2px 2px white;
+	}	
+#taiwan{
+	background-image:url(../img/index_photos/taiwan.png);
+	font-size:35px;
+}
+#taiwan > a:link{
+	color:black;
+	text-shadow: 2px 2px white;
+	}
+#taiwan > a:visited{
+color:black;
+text-shadow: 2px 2px white;
+	}
+#taiwan > a:hover{
+color:black;
+text-shadow: 2px 2px white;
+	}
+#taiwan > a:active{
+color:black;
+text-shadow: 2px 2px white;
+	}
+#kimmarie{
+	background-image:url(../img/index_photos/kimmarie.png);
+	font-size:35px;
+}
+#kimmarie > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#kimmarie > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#kimmarie > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#kimmarie > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}
+
+#shaoulin{
+	background-image:url(../img/index_photos/shaoulin.png);
+	font-size:35px;
+}
+#shaoulin > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#shaoulin > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#shaoulin > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#shaoulin > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#jacob{
+	background-image:url(../img/index_photos/jacob.png);
+	font-size:35px;
+}
+#jacob > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#jacob > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#jacob > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#jacob > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#shazal{
+	background-image:url(../img/index_photos/shazal.png);
+	font-size:35px;
+}
+#shazal > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#shazal > a:visited{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#shazal > a:hover{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#shazal > a:active{
+color:white;
+text-shadow: 2px 2px black;
+	}
+#jaileen{
+	background-image:url(../img/index_photos/jaileen.png);
+	font-size:35px;
+}
+#jaileen > a:link{
+	color:black;
+	text-shadow: 2px 2px white;
+	}
+#jaileen > a:visited{
+color:black;
+	text-shadow: 2px 2px white;}
+#jaileen > a:hover{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#jaileen > a:active{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+	
+#isis{
+	background-image:url(../img/index_photos/isis.png);
+	font-size:50px;
+}
+#isis > a:link{
+	color:black;
+	text-shadow: 2px 2px white;
+	}
+#isis > a:visited{
+color:black;
+	text-shadow: 2px 2px white;}
+#isis > a:hover{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#isis > a:active{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+
+#lisset{
+	background-image:url(../img/index_photos/lisset.png);
+	font-size:50px;
+}
+#lisset > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#lisset > a:visited{
+color:white;
+	text-shadow: 2px 2px black;}
+#lisset > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#lisset > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#antonio{
+	background-image:url(../img/index_photos/antonio.png);
+	font-size:25px;
+}
+#antonio > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#antonio > a:visited{
+color:white;
+	text-shadow: 2px 2px black;}
+#antonio > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#antonio > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+	
+
+#toast{
+	background-image:url(../img/index_photos/toast.png);
+	font-size:50px;
+}
+#toast > a:link{
+	color:black;
+	text-shadow: 2px 2px white;
+	}
+#toast> a:visited{
+color:black;
+	text-shadow: 2px 2px white;}
+#toast > a:hover{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#toast > a:active{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#ant{
+	background-image:url(../img/index_photos/ant.png);
+	font-size:55px;
+}
+#ant > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#ant > a:visited{
+color:white;
+	text-shadow: 2px 2px black;}
+#ant > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#ant > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#najee{
+	background-image:url(../img/index_photos/najee.png);
+	font-size:55px;
+}
+#najee > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#najee > a:visited{
+color:white;
+	text-shadow: 2px 2px black;}
+#najee > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#najee > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+	
+#crystalg{
+	background-image:url(../img/index_photos/crystalg.png);
+	font-size:35px;
+}
+#crystalg > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#crystalg > a:visited{
+color:white;
+	text-shadow: 2px 2px black;}
+#crystalg > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#crystalg > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+
+#jovan{
+	background-image:url(../img/index_photos/jovan.png);
+	font-size:45px;
+}
+#jovan > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#jovan > a:visited{
+color:white;
+	text-shadow: 2px 2px black;}
+#jovan > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#jovan > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+	
+#mariah{
+	background-image:url(../img/index_photos/mariah.png);
+	font-size:45px;
+}
+#mariah > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#mariah > a:visited{
+color:white;
+	text-shadow: 2px 2px black;}
+#mariah > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#mariah > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#kendell{
+	background-image:url(../img/index_photos/kendell.png);
+	font-size:45px;
+}
+#kendell > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#kendell > a:visited{
+color:white;
+	text-shadow: 2px 2px black;}
+#kendell > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#kendell > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#omar{
+	background-image:url(../img/index_photos/omar.png);
+	font-size:55px;
+}
+#omar > a:link{
+	color:black;
+	text-shadow: 2px 2px white;
+	}
+#omar > a:visited{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#omar > a:hover{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#omar > a:active{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#roberto{
+	background-image:url(../img/index_photos/roberto.png);
+	font-size:55px;
+}
+#roberto > a:link{
+	color:black;
+	text-shadow: 2px 2px white;
+	}
+#roberto > a:visited{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#roberto > a:hover{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#roberto > a:active{
+color:black;
+	text-shadow: 2px 2px white;
+	}
+#shazaib{
+	background-image:url(../img/index_photos/shazaib.png);
+	font-size:45px;
+}
+#shazaib > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#shazaib > a:visited{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#shazaib > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#shazaib > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+}
+#shaleah{
+	background-image:url(../img/index_photos/shaleah.png);
+	font-size:45px;
+}
+#shaleah > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#shaleah > a:visited{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#shaleah > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#shaleah > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#luisa{
+	background-image:url(../img/index_photos/luisa.png);
+	font-size:45px;
+}
+#luisa > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#luisa > a:visited{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#luisa > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#luisa > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#rosie{
+	background-image:url(../img/index_photos/rosie.png);
+	font-size:45px;
+}
+#rosie > a:link{
+	color:white;
+	text-shadow: 2px 2px black;
+	}
+#rosie > a:visited{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#rosie > a:hover{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+#rosie > a:active{
+color:white;
+	text-shadow: 2px 2px black;
+	}
+.individual_photo:hover {
+	opacity:1;
+}
+
+.individual_photo > a{
+	display:block;
+	height:200px;
+	margin-top:125px;
+}
+
+div.individual_photo > a:link{
+	text-decoration:none;
+	color:black;
+
+
+}
+div.individual_photo > a:visited{
+	text-decoration:none;
+	color:black;
+
+
+}
+
+div.individual_photo > a:hover{
+	text-decoration:none;
+	color:black;
+
+
+}
+
+div.individual_photo > a:active{
+	text-decoration:none;
+	color:black;
+
+
+}
+
